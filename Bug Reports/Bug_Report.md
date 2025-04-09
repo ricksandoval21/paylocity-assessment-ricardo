@@ -36,22 +36,17 @@ This report summarizes the findings from manual exploratory testing of Paylocity
 | API-003 | API | POST Add Employee | Medium | Nulls, Strings and empties values on Dependents  is responding with 405 Error Code | Open |
 | API-004 | API | POST Add Employee | Critical | Able to create duplicates values | Open |
 | API-005 | API | POST Add Employee | Medium | Sending the value as numeric in First Name and Last Name is responding with 405 Error Code | Open |
-| API-006 | API | GET
-Get Employee | Medium | Getting 500 Error Message when Id is empty, zero, negative, string or invalid. | Open |
-| API-007 | API | GET
-Get Employee | High | Getting 200 status code with empty response when Id is valid format but doesn’t exists or was already deleted | Open |
+| API-006 | API | GET Get Employee | Medium | Getting 500 Error Message when Id is empty, zero, negative, string or invalid. | Open |
+| API-007 | API | GET Get Employee | High | Getting 200 status code with empty response when Id is valid format but doesn’t exists or was already deleted | Open |
 | API-008 | API | GET Get Employee | Medium | Getting 400 Bad Request but no error message displayed when Id contains special characters | Open |
 | API-009 | API | PUT Update Employee | High | Able to update an Employee with an incorrect employee ID | Open |
 | API-010 | API | PUT Update Employee | High | Able to update an Employee without “Dependents” field | Open |
 | API-011 | API | PUT Update Employee | High | ID field does not request it as required - Responding with 405 Error Code | Open |
 | API-012 | API | PUT Update Employee | Medium | Invalid, Numeric and Special Characters values in ID field is responding with 405 Error Code - Not error message | Open |
 | API-013 | API | PUT Update Employee | High | Null value on “Dependents” is responding with 405 Error Code - Not error message | Open |
-| API-014 | API | DEL
-Delete Employee | High | ID with a valid format value but doesn’t exists is responding with a 200 status code | Open |
-| API-015 | API | DEL
-Delete Employee | Medium | ID with special characters is responding with 400 bad request but is not showing any error message | Open |
-| API-016 | API | DEL
-Delete Employee | Medium | Numeric, negative or String ID values is responding with a 405 Error code | Open |
+| API-014 | API | DEL Delete Employee | High | ID with a valid format value but doesn’t exists is responding with a 200 status code | Open |
+| API-015 | API | DEL Delete Employee | Medium | ID with special characters is responding with 400 bad request but is not showing any error message | Open |
+| API-016 | API | DEL Delete Employee | Medium | Numeric, negative or String ID values is responding with a 405 Error code | Open |
 
 > 🧮 Total Bugs: 27
 > 
