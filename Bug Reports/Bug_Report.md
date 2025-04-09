@@ -1,3 +1,5 @@
+# Paylocity – Assessment Report
+
 ## 🧾 Paylocity – Bug Assessment Report
 
 Ricardo Sandoval
@@ -29,11 +31,11 @@ This report summarizes the findings from manual exploratory testing of Paylocity
 | UI-009 | UI | “Add Employee” window | Medium | Able to add more than 3 dependents | Open |
 | UI-010 | UI | “Add Employee” window | Critical | Click twice on Add Employee button is creating duplicates | Open |
 | UI-011 | UI | Benefits Dashboard | Medium | Table breaks because responsive issue | Open |
-| API-001 | API | POST /Prod/api/employees | Medium | Expected 201 code | Open |
-| API-002 | API | POST /Prod/api/employees | Medium | Blank space allowed in Field Name and Last Name. | Open |
-| API-003 | API | POST /Prod/api/employees | Medium | Nulls, Strings and empties values on Dependents  is responding with 405 Error Code | Open |
-| API-004 | API | POST /Prod/api/employees | Critical | Able to create duplicates values | Open |
-| API-005 | API | POST /Prod/api/employees | Medium | Sending the value as numeric in First Name and Last Name is responding with 405 Error Code | Open |
+| API-001 | API | POST Add Employee | Medium | Expected 201 code | Open |
+| API-002 | API | POST Add Employee | Medium | Blank space allowed in Field Name and Last Name. | Open |
+| API-003 | API | POST Add Employee | Medium | Nulls, Strings and empties values on Dependents  is responding with 405 Error Code | Open |
+| API-004 | API | POST Add Employee | Critical | Able to create duplicates values | Open |
+| API-005 | API | POST Add Employee | Medium | Sending the value as numeric in First Name and Last Name is responding with 405 Error Code | Open |
 | API-006 | API | GET
 Get Employee | Medium | Getting 500 Error Message when Id is empty, zero, negative, string or invalid. | Open |
 | API-007 | API | GET
