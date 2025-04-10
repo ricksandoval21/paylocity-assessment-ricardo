@@ -49,12 +49,12 @@ This report summarizes the findings from manual exploratory testing of Paylocity
 | API-015 | API | DEL Delete Employee | Medium | ID with special characters is responding with 400 bad request but is not showing any error message | Open |
 | API-016 | API | DEL Delete Employee | Medium | Numeric, negative or String ID values is responding with a 405 Error code | Open |
 
-> 🧮 Total Bugs: 27
+> 🧮 Total Bugs: 28
 > 
 > 
-> 🎯 Distribution: 11 UI, 16 API
+> 🎯 Distribution: 12 UI, 16 API
 > 
-> 🚨 Severity: 4 Critical, 8 High, 15 Medium
+> 🚨 Severity: 4 Critical, 9 High, 15 Medium
 > 
 
 ---
