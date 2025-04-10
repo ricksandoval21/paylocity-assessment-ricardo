@@ -31,34 +31,30 @@ This report summarizes the findings from manual exploratory testing of Paylocity
 | UI-009 | UI | “Add Employee” window | Medium | Able to add more than 3 dependents | Open |
 | UI-010 | UI | “Add Employee” window | Critical | Click twice on Add Employee button is creating duplicates | Open |
 | UI-011 | UI | Benefits Dashboard | Medium | Table breaks because responsive issue | Open |
+| UI-012 | UI | Benefits Dashboard | High | Names are switched | Open |
 | API-001 | API | POST Add Employee | Medium | Expected 201 code | Open |
 | API-002 | API | POST Add Employee | Medium | Blank space allowed in Field Name and Last Name. | Open |
 | API-003 | API | POST Add Employee | Medium | Nulls, Strings and empties values on Dependents  is responding with 405 Error Code | Open |
 | API-004 | API | POST Add Employee | Critical | Able to create duplicates values | Open |
 | API-005 | API | POST Add Employee | Medium | Sending the value as numeric in First Name and Last Name is responding with 405 Error Code | Open |
-| API-006 | API | GET
-Get Employee | Medium | Getting 500 Error Message when Id is empty, zero, negative, string or invalid. | Open |
-| API-007 | API | GET
-Get Employee | High | Getting 200 status code with empty response when Id is valid format but doesn’t exists or was already deleted | Open |
+| API-006 | API | GET Get Employee | Medium | Getting 500 Error Message when Id is empty, zero, negative, string or invalid. | Open |
+| API-007 | API | GET Get Employee | High | Getting 200 status code with empty response when Id is valid format but doesn’t exists or was already deleted | Open |
 | API-008 | API | GET Get Employee | Medium | Getting 400 Bad Request but no error message displayed when Id contains special characters | Open |
 | API-009 | API | PUT Update Employee | High | Able to update an Employee with an incorrect employee ID | Open |
 | API-010 | API | PUT Update Employee | High | Able to update an Employee without “Dependents” field | Open |
 | API-011 | API | PUT Update Employee | High | ID field does not request it as required - Responding with 405 Error Code | Open |
 | API-012 | API | PUT Update Employee | Medium | Invalid, Numeric and Special Characters values in ID field is responding with 405 Error Code - Not error message | Open |
 | API-013 | API | PUT Update Employee | High | Null value on “Dependents” is responding with 405 Error Code - Not error message | Open |
-| API-014 | API | DEL
-Delete Employee | High | ID with a valid format value but doesn’t exists is responding with a 200 status code | Open |
-| API-015 | API | DEL
-Delete Employee | Medium | ID with special characters is responding with 400 bad request but is not showing any error message | Open |
-| API-016 | API | DEL
-Delete Employee | Medium | Numeric, negative or String ID values is responding with a 405 Error code | Open |
+| API-014 | API | DEL Delete Employee | High | ID with a valid format value but doesn’t exists is responding with a 200 status code | Open |
+| API-015 | API | DEL Delete Employee | Medium | ID with special characters is responding with 400 bad request but is not showing any error message | Open |
+| API-016 | API | DEL Delete Employee | Medium | Numeric, negative or String ID values is responding with a 405 Error code | Open |
 
-> 🧮 Total Bugs: 27
+> 🧮 Total Bugs: 28
 > 
 > 
-> 🎯 Distribution: 11 UI, 16 API
+> 🎯 Distribution: 12 UI, 16 API
 > 
-> 🚨 Severity: 4 Critical, 8 High, 15 Medium
+> 🚨 Severity: 4 Critical, 9 High, 15 Medium
 > 
 
 ---
@@ -256,6 +252,23 @@ Delete Employee | Medium | Numeric, negative or String ID values is responding w
 - **Expected:** Table should be correctly displayed
 - **Actual:** Table layout is breaking and is not correctly displayed
 - **Evidence:** `EVIDENCE/UI/UI-011.png`
+
+---
+
+### 🔹 UI-012 – Names are switched
+
+- **Component:** Benefits Dashboard
+- **Severity:** High
+- **Environment:** Chrome v 134.0.6998.178, Windows 11
+- **Pre-conditions:** Valid Credentials for Paylocity Benefits Dashboard
+- **Steps to Reproduce:**
+    1. Go to Paylocity Benefits Dashboard
+    2. Add a FirstName and the Lastname
+    3. Add any dependants
+    4. Validated the names
+- **Expected:** Names should be correctly
+- **Actual:** Firstname is on Lastname column and Lastname on Firstname column
+- **Evidence:** `EVIDENCE/UI/UI-012.png`
 
 ---
 
