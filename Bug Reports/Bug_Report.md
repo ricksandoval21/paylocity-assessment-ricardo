@@ -267,7 +267,7 @@ This report summarizes the findings from manual exploratory testing of Paylocity
     3. Add any dependants
     4. Validated the names
 - **Expected:** Names should be correctly
-- **Actual:** Firstname is on Lastname column and Lastname in Firstname column
+- **Actual:** Firstname is on Lastname column and Lastname on Firstname column
 - **Evidence:** `EVIDENCE/UI/UI-012.png`
 
 ---
