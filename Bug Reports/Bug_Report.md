@@ -31,6 +31,7 @@ This report summarizes the findings from manual exploratory testing of Paylocity
 | UI-009 | UI | “Add Employee” window | Medium | Able to add more than 3 dependents | Open |
 | UI-010 | UI | “Add Employee” window | Critical | Click twice on Add Employee button is creating duplicates | Open |
 | UI-011 | UI | Benefits Dashboard | Medium | Table breaks because responsive issue | Open |
+| UI-012 | UI | Benefits Dashboard | High | Names are switched | Open |
 | API-001 | API | POST Add Employee | Medium | Expected 201 code | Open |
 | API-002 | API | POST Add Employee | Medium | Blank space allowed in Field Name and Last Name. | Open |
 | API-003 | API | POST Add Employee | Medium | Nulls, Strings and empties values on Dependents  is responding with 405 Error Code | Open |
@@ -251,6 +252,23 @@ This report summarizes the findings from manual exploratory testing of Paylocity
 - **Expected:** Table should be correctly displayed
 - **Actual:** Table layout is breaking and is not correctly displayed
 - **Evidence:** `EVIDENCE/UI/UI-011.png`
+
+---
+
+### 🔹 UI-012 – Names are switched
+
+- **Component:** Benefits Dashboard
+- **Severity:** High
+- **Environment:** Chrome v 134.0.6998.178, Windows 11
+- **Pre-conditions:** Valid Credentials for Paylocity Benefits Dashboard
+- **Steps to Reproduce:**
+    1. Go to Paylocity Benefits Dashboard
+    2. Add a FirstName and the Lastname
+    3. Add any dependants
+    4. Validated the names
+- **Expected:** Names should be correctly
+- **Actual:** Firstname is on Lastname column and Lastname in Firstname column
+- **Evidence:** `EVIDENCE/UI/UI-012.png`
 
 ---
 
